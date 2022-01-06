@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WordBeater</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2>Welcome to WordBeater</h2>
+      <p>
+        <strong>Instructions:</strong> There are three levels of difficulty to
+        choose from. Each level has a corresponding time. Your goal is to match
+        the displayed word within the given time. If the time reaches 0, game
+        over. Enjoy :)
+      </p>
+    </div>
+
+    <header>
+      <h1>Practise Typing!</h1>
+    </header>
+
+    <div class="levels">
+      <h2 class="levelText">Choose difficulty:</h2>
+      <button class="button_for_level" id="easy">Easy</button>
+      <button class="button_for_level" id="medium">Medium</button>
+      <button class="button_for_level" id="hard">Hard</button>
+    </div>
+
+    <div class="heading_section">
+      <h3>
+        Type This Within <span id="seconds"></span> seconds. If you can...
+      </h3>
+      <div style="margin: 20px" id="givenWord"></div>
+    </div>
+
+    <div class="user_input">
+      <input type="text" id="word" placeholder="Start typing..." autofocus />
+      <h3 id="message"></h3>
+
+      <div class="user_stats">
+        <h4>Score: <span id="score"></span></h4>
+        <h4>Time: <span id="time"></span></h4>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
